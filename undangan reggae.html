@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Raleway', sans-serif;
+            background: url('buku nikah.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            color: #0a0a0a;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: rgba(255, 255, 255, 0.418);
+            text-align: center;
+            color: #1a1c1c;
+            padding: 80px 20px;
+        }
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 50px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 20px;
+            font-weight: 300;
+        }
+        .content {
+            background: rgb(253, 254, 254);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgb(0, 0, 0);
+            padding: 40px;
+            margin: -50px auto 20px;
+            max-width: 800px;
+            text-align: center;
+        }
+        .content h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .content p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        .details {
+            margin-bottom: 20px;
+        }
+        .details h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        .details p {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+        }
+        .footer p {
+            font-size: 14px;
+            margin: 0;
+        }
+        .btn-primary {
+            background-color: #7f5af0;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        .btn-primary:hover {
+            background-color: #6949c6;
+        }
+        .music-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            cursor: pointer;
+        }
+        .music-icon img {
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Undangan Pernikahan</h1>
+        <p>Hilda Priyanto & Siska Nur Mayanti</p>
+        <p>Selasa, 17 Desember 2024</p>
+    </header>
+
+    <div class="content">
+        <h2>Assalamualaikum warahmatullahi wabarakatuh</h2>
+        <p>Tanpa mengurangi rasa hormat, perkenankan kami mengundang Bapa/Ibu/Saudara/i untuk hadir di acara pernikahan kami:</p>
+
+        <div class="details">
+            <h3>Akad Nikah</h3>
+            <p><strong>Hari & Tanggal:</strong> Selasa, 17 Desember 2024</p>
+            <p><strong>Waktu:</strong> 08.30 - Selesai</p>
+            <p><strong>Lokasi:</strong> Kediaman mempelai perempuan<br>Jl Rancah-Rajadesa, RT 11, RW 01, Dusun Karanganyar, Desa Tanjungjaya, Kec Rajadesa, Kab Ciamis.</p>
+            <a href="https://maps.app.goo.gl/AZxLjcpWG6KUFoqS7" target="_blank" class="btn btn-primary">Buka Lokasi</a>
+        </div>
+
+        <div class="details">
+            <h3>Syukuran</h3>
+            <p><strong>Hari & Tanggal:</strong> Senin, 16 Desember 2024</p>
+            <p><strong>Lokasi:</strong> Kediaman mempelai pria<br>Jl Ciamis-Sukadana, RT 18 RW 009, Dusun Karangtengah, Desa Salakaria, Kec Sukadana, Kab Ciamis.</p>
+            <a href="https://maps.app.goo.gl/6MJpZPuAe4iZ8PzM7" target="_blank" class="btn btn-primary">Buka Lokasi</a>
+        </div>
+
+        <p>Demikian undangan ini, kami sangat berharap Bapa/Ibu/Saudara/i dapat hadir untuk berbagi kebahagiaan bersama kami.</p>
+        <p><i>Wassalamualaikum warahmatullahi wabarakatuh.</i></p>
+
+        <!-- Tombol Kartu Undangan -->
+        <a href="kartu undangan.pdf" target="_blank" class="btn btn-primary">Lihat Kartu Undangan</a>
+    </div>
+
+    <!-- Logo Musik -->
+    <div class="music-icon" onclick="toggleMusic()">
+        <img src="https://img.icons8.com/ios-filled/50/7f5af0/musical-notes.png" alt="Music Icon">
+    </div>
+    <audio id="background-music" autoplay loop>
+        <source src="Tony Q Rastafara - Tertanam (Official Audio).mp3" type="audio/mpeg">
+        Browser Anda tidak mendukung pemutar musik.
+    </audio>
+
+    <footer class="footer">
+        <p>&copy; 2024 Hilda Priyanto & Siska Nur Mayanti. Semua hak dilindungi.</p>
+        <p>"Kebahagiaan bertambah ketika dirayakan bersama orang tersayang."</p>
+        <p>"kontak : whatsapp 0852-2062-8989_Hilda Priyanto / 0821-3017-4560_Rizki."</p>
+    </footer>
+
+    <script>
+        function toggleMusic() {
+            const audio = document.getElementById('background-music');
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+    </script>
+</body>
+</html>
